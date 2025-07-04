@@ -1,19 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export", // ⭐ static export enable
-
   images: {
-    unoptimized: true, // ⭐ static export ke liye image optimization disable
+    unoptimized: true,
   },
-
   async headers() {
     return [
       {
-        source: "/(.*)", // Apply to all pages
+        source: "/(.*)",
         headers: [
           {
             key: "Cross-Origin-Opener-Policy",
-            value: "same-origin-allow-popups", // ✅ CRITICAL
+            value: "same-origin-allow-popups",
           },
         ],
       },
