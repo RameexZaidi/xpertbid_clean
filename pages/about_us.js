@@ -51,92 +51,102 @@ const AboutUs = () => {
       </section>
 
       {/* mission/vision/what we do */}
-      <section className="py-5 bg-light">
-        <div className="container">
-          <div className="row g-4">
-            {[
-              {
-                icon: "bi-bullseye",
-                title: "Our Mission",
-                content:
-                  "To bring structure, speed, and trust to property and asset trading in regions where traditional systems fall short.",
-              },
-              {
-                icon: "bi-eye",
-                title: "Our Vision",
-                content:
-                  "To become the leading digital auction platform across the Middle East, South Asia, and emerging markets—where individuals and businesses can trade confidently, access broader markets, and unlock the full value of their assets.",
-              },
-              {
-                icon: "bi-lightning-charge",
-                title: "What We Do",
-                content:
-                  "We provide a digital auction platform focused on real estate—residential, commercial, plots, and rentals—plus vehicles, equipment, and inventory. Timed auctions, KYC-verified buyers, escrow-secured payments, and an easy dashboard create real opportunities for growth.",
-              },
-            ].map((item, idx) => (
-              <div className="col-md-4" key={idx}>
-                <div
-                  className="mission-card position-relative text-center"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="top"
-                  title={`Hover to see ${item.title}`}
-                >
-                  <div className="icon-heading">
-                    <i
-                      className={`bi ${item.icon}`}
-                      style={{ fontSize: "2rem", color: "#43ACE9" }}
-                    ></i>
-                    <h3 className="my-2">{item.title}</h3>
-                  </div>
-                  <div className="overlay-content">
-                    <p>{item.content}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
+     <section
+  className="py-5 mission-section"
+>
+  <div className="container">
+    <div className="row g-4">
+      {[
+        {
+          icon: "bi-bullseye",
+          title: "Our Mission",
+          content:
+            "To bring structure, speed, and trust to property and asset trading in regions where traditional systems fall short.",
+        },
+        {
+          icon: "bi-eye",
+          title: "Our Vision",
+          content:
+            "To become the leading digital auction platform across the Middle East, South Asia, and emerging markets—where individuals and businesses can trade confidently, access broader markets, and unlock the full value of their assets.",
+        },
+        {
+          icon: "bi-lightning-charge",
+          title: "What We Do",
+          content:
+            "We provide a digital auction platform focused on real estate—residential, commercial, plots, and rentals—plus vehicles, equipment, and inventory. Timed auctions, KYC-verified buyers, escrow-secured payments, and an easy dashboard create real opportunities for growth.",
+        },
+      ].map((item, idx) => (
+        <div className="col-md-4" key={idx}>
+          <div
+            className="mission-card position-relative text-center"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            title={`Hover to see ${item.title}`}
+          >
+            <div className="icon-heading">
+              <i
+                className={`bi ${item.icon}`}
+                style={{ fontSize: "2rem", color: "#43ACE9" }}
+              ></i>
+              <h3 className="my-2">{item.title}</h3>
+            </div>
+            <div className="overlay-content">
+              <p>{item.content}</p>
+            </div>
           </div>
         </div>
-        <style jsx>{`
-          .mission-card {
-            background-color: #fff;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            position: relative;
-            height: 320px;
-            cursor: pointer;
-          }
-          .mission-card .overlay-content {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(67, 172, 233, 0.95);
-            color: #fff;
-            padding: 1.5rem;
-            transition: top 0.4s ease;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-          }
-          .mission-card:hover .overlay-content {
-            top: 0;
-          }
-          .icon-heading {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-            transition: opacity 0.3s ease;
-          }
-          .mission-card:hover .icon-heading {
-            opacity: 0;
-          }
-        `}</style>
-      </section>
+      ))}
+    </div>
+  </div>
+
+  <style jsx>{`
+    .mission-section {
+      background-color: #E4F3FB;
+      background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+      background-attachment: fixed;
+      background-position: center center;
+    }
+    .mission-card {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      position: relative;
+      height: 320px;
+      cursor: pointer;
+    }
+    .mission-card .overlay-content {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(67, 172, 233, 0.95);
+      color: #fff;
+      padding: 1.5rem;
+      transition: top 0.4s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .mission-card:hover .overlay-content {
+      top: 0;
+    }
+    .icon-heading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      transition: opacity 0.3s ease;
+    }
+    .mission-card:hover .icon-heading {
+      opacity: 0;
+    }
+  `}</style>
+</section>
+
 
       {/* our story swiper */}
       <section className="py-5 bg-white">
