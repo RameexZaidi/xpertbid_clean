@@ -395,6 +395,16 @@ useEffect(() => {
           Contact Us
         </Link>
       </li>
+
+      <li className="nav-item">
+  <Link
+    href="/Faqs"
+    className={`nav-link ${router.pathname === '/Faqs' ? 'active' : ''}`}
+  >
+    FAQs
+  </Link>
+</li>
+
          
 
          
