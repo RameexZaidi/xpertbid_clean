@@ -7,7 +7,7 @@ import HeroSection from "../components/HeroSection";
 //import FeaturedProducts from "../components/FeaturedProducts";
 import HowItWorks from "../components/HowItWorks";
 
-import SliderBrowseCategories from "../components/SliderBrowseCategories";
+//import SliderBrowseCategories from "../components/SliderBrowseCategories";
 
 import TopBid from "../components/TopBid";
 import MarketplaceSection from "../components/MarketplaceSection";
@@ -63,7 +63,7 @@ export default function Home() {
           {/* <FeaturedProducts /> */}
           <HowItWorks />
 
-          <SliderBrowseCategories />
+          
           <TopBid />
           <MarketplaceSection products={products} />
           <SellerTestimonials/>
