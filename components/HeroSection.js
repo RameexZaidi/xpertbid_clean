@@ -80,7 +80,7 @@ export default function HeroSection() {
                     <h1 className="hero-sec">{slide.subtitle}</h1>
                     <p>{slide.description}</p>
                     <div className="hero-sec-btn">
-                      <Link className="explore-more" href={"/marketplace"}>
+                      <Link className="sellnow" href={"/marketplace"}>
                         BID NOW
                       </Link>
                       <Link href={"/sell"} className="sellnow">
