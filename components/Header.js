@@ -490,16 +490,7 @@ useEffect(() => {
           Directory
         </Link>
       </li>
-        <li className="nav-item">
-        <Link
-          href="/Teams"
-          className={`nav-link  ${
-            router.pathname === '/Teams' ? 'active' : ''
-          }`}
-        >
-          Teams
-        </Link>
-      </li>
+        
        <li className="nav-item">
         <Link
           href="/contact"
@@ -510,7 +501,16 @@ useEffect(() => {
           Contact Us
         </Link>
       </li>
-
+<li className="nav-item">
+        <Link
+          href="/Teams"
+          className={`nav-link  ${
+            router.pathname === '/Teams' ? 'active' : ''
+          }`}
+        >
+          Teams
+        </Link>
+      </li>
             <li className="nav-item">
  
 <Link href="/sell" className="d-xl-none text-white sellnow nav-sellnow   ">
