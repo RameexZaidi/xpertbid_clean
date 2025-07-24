@@ -198,10 +198,10 @@ useEffect(() => {
           className="search-icon-btn"
           onClick={() => setSearchOpen(true)}
         >
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-    <path d="M9.58317 17.4998C13.9554 17.4998 17.4998 13.9554 17.4998 9.58317C17.4998 5.21092 13.9554 1.6665 9.58317 1.6665C5.21092 1.6665 1.6665 5.21092 1.6665 9.58317C1.6665 13.9554 5.21092 17.4998 9.58317 17.4998Z" stroke="#606060" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M18.3332 18.3332L16.6665 16.6665" stroke="#606060" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  </svg>
+  //         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+  //   <path d="M9.58317 17.4998C13.9554 17.4998 17.4998 13.9554 17.4998 9.58317C17.4998 5.21092 13.9554 1.6665 9.58317 1.6665C5.21092 1.6665 1.6665 5.21092 1.6665 9.58317C1.6665 13.9554 5.21092 17.4998 9.58317 17.4998Z" stroke="#606060" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  //   <path d="M18.3332 18.3332L16.6665 16.6665" stroke="#606060" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  // </svg>
         </button> 
         </p>
                 <NotificationDropdown />
@@ -576,7 +576,7 @@ useEffect(() => {
   <path d="M12 6V18" stroke="#23262F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#23262F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-                      <Link className="amount" href={'/wallet'}><span ><WalletBalance/></span></Link>
+                      <Link className="amount" href={'/wallet'}><span ><WalletBalance/>PKR</span></Link>
                     </p>
                     <p className="sear-icon d-none d-xl-inline">
                       <button
