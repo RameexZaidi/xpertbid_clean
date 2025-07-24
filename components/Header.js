@@ -494,7 +494,7 @@ useEffect(() => {
         <Link
           href="/Teams"
           className={`nav-link  ${
-            router.pathname === '/about-our-partner' ? 'active' : ''
+            router.pathname === '/Teams' ? 'active' : ''
           }`}
         >
           Teams
