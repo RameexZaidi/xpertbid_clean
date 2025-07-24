@@ -490,8 +490,17 @@ useEffect(() => {
           Directory
         </Link>
       </li>
-
-                                     <li className="nav-item">
+        <li className="nav-item">
+        <Link
+          href="/Teams"
+          className={`nav-link  ${
+            router.pathname === '/about-our-partner' ? 'active' : ''
+          }`}
+        >
+          Teams
+        </Link>
+      </li>
+       <li className="nav-item">
         <Link
           href="/contact"
           className={`nav-link  ${
