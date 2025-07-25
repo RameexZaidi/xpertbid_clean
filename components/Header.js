@@ -112,7 +112,7 @@ useEffect(() => {
       
       if (session?.user?.token) {
         await axios.post(
-          "https://admin.xpertbid.com/api/logout",
+          "http://127.0.0.1:8000/api/logout",
           {},
           {
             headers: {
@@ -161,7 +161,7 @@ useEffect(() => {
   // const fetchSearchResults = async (query) => {
   //   setIsSearching(true);
   //   try {
-  //     const response = await axios.get(`https://admin.xpertbid.com/api/search-auctions`, {
+  //     const response = await axios.get(`http://127.0.0.1:8000/api/search-auctions`, {
   //       params: { query },
   //     });
   //     setSearchResults(response.data.auctions);
@@ -198,10 +198,10 @@ useEffect(() => {
           className="search-icon-btn"
           onClick={() => setSearchOpen(true)}
         >
-  //         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-  //   <path d="M9.58317 17.4998C13.9554 17.4998 17.4998 13.9554 17.4998 9.58317C17.4998 5.21092 13.9554 1.6665 9.58317 1.6665C5.21092 1.6665 1.6665 5.21092 1.6665 9.58317C1.6665 13.9554 5.21092 17.4998 9.58317 17.4998Z" stroke="#606060" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  //   <path d="M18.3332 18.3332L16.6665 16.6665" stroke="#606060" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  // </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+    <path d="M9.58317 17.4998C13.9554 17.4998 17.4998 13.9554 17.4998 9.58317C17.4998 5.21092 13.9554 1.6665 9.58317 1.6665C5.21092 1.6665 1.6665 5.21092 1.6665 9.58317C1.6665 13.9554 5.21092 17.4998 9.58317 17.4998Z" stroke="#606060" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M18.3332 18.3332L16.6665 16.6665" stroke="#606060" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
         </button> 
         </p>
                 <NotificationDropdown />
@@ -444,8 +444,7 @@ useEffect(() => {
 
 
 
-                  </ul>
-
+                  </ul>   
                   <div className="nav-item registration-btns d-none d-xl-flex"> 
                     <button className="loginButton login me-4" onClick={() => handleOpenModal("signin")}>Login</button>
                     <button className="SignupButton signup me-2" onClick={() => handleOpenModal("signup")}>Sign Up</button>
@@ -490,8 +489,8 @@ useEffect(() => {
           Directory
         </Link>
       </li>
-        
-       <li className="nav-item">
+
+                                     <li className="nav-item">
         <Link
           href="/contact"
           className={`nav-link  ${
@@ -501,16 +500,7 @@ useEffect(() => {
           Contact Us
         </Link>
       </li>
-<li className="nav-item">
-        <Link
-          href="/Teams"
-          className={`nav-link  ${
-            router.pathname === '/Teams' ? 'active' : ''
-          }`}
-        >
-          Teams
-        </Link>
-      </li>
+
             <li className="nav-item">
  
 <Link href="/sell" className="d-xl-none text-white sellnow nav-sellnow   ">
@@ -576,7 +566,7 @@ useEffect(() => {
   <path d="M12 6V18" stroke="#23262F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#23262F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-                      <Link className="amount" href={'/wallet'}><span ><WalletBalance/>PKR</span></Link>
+                      <Link className="amount" href={'/wallet'}><span ><WalletBalance/></span></Link>
                     </p>
                     <p className="sear-icon d-none d-xl-inline">
                       <button
@@ -704,16 +694,16 @@ useEffect(() => {
                 <li className="mobile-child-menu"><Link href="/sell" className="mobile-sellnow">Sell Now</Link></li>
                 <ul className="navbar-nav">
                  <li className="nav-item">
-  <Link
-    href="/categories"
-                        className={`nav-link ${
-                          router.pathname === '/categories' ? 'text-primary' : ''
-                        }`}
-    role="button"
-  >
-    Categories
-  </Link>
-</li>
+                      <Link
+                        href="/categories"
+                                            className={`nav-link ${
+                                              router.pathname === '/categories' ? 'text-primary' : ''
+                                            }`}
+                        role="button"
+                      >
+                        Categories
+                      </Link>
+                    </li>
                   <li className="nav-item ">
                     <Link className="{`nav-link ${
                           router.pathname === '/categories' ? 'text-primary' : ''
@@ -722,6 +712,18 @@ useEffect(() => {
                     </Link>
 
                   </li>
+
+                    <li className="nav-item">
+                      <Link
+                        href="/categories"
+                                            className={`nav-link ${
+                                              router.pathname === '/Team' ? 'text-primary' : ''
+                                            }`}
+                        role="button"
+                      >
+                        Team
+                      </Link>
+                    </li>
                   {/* <li className="nav-item dropdown">
                     <Link className="nav-link" href={"/about_us"} >
                       About
